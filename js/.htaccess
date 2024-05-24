@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^google-site-verification\.txt$ - [NC,L]
+Header set Content-Type "text/plain"
+Header set Content-Length "%{CONTENT_LENGTH}"
